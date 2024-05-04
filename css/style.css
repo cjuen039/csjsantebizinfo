@@ -462,6 +462,7 @@ a:focus {
 
 .about_section .heading_container h2 {
   color: #ffffff;
+  margin-top: 25px;
 }
 
 .about_section .about_container {
@@ -483,8 +484,7 @@ a:focus {
 }
 
 .about_section .about_container .detail-box p {
-  margin-top: 15px;
-  margin-top: 5vw;
+  margin-top: 50px;
 }
 
 .about_section .about_container .detail-box hr {
