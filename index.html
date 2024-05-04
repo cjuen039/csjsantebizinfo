@@ -207,8 +207,11 @@
                         ensures that every product we offer meets the highest
                         standards of purity and efficacy.
                       </p>
-                      <!--hr /-->
-                      <a href="javascript:void(0)" class="read-more-btn">Read More</a></br></br>
+                      <div class="button-container">
+                        <hr />
+                        <a href="javascript:void(0)" class="read-more-btn">Read More</a>
+                      </div>
+                      </br></br>
                       <!-- Read more content starts -->
                       <div class="read-more-content" style="display: none">
                         <h2>Company Overview</h2>
@@ -475,11 +478,11 @@
     });
   </script>
   <!-- end owl carousel script -->
-
   <script type="text/javascript">
     $(document).ready(function () {
-      $(".read-more-btn").click(function () {
-        $(this).siblings(".read-more-content").slideToggle();
+      $(".read-more-btn").click(function (e) {
+        e.preventDefault(); // Prevent the default action of the anchor tag
+        $(this).closest(".scrollable-content").find(".read-more-content").slideToggle();
       });
     });
   </script>
