@@ -483,7 +483,8 @@ a:focus {
 }
 
 .about_section .about_container .detail-box p {
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-top: 5vw;
 }
 
 .about_section .about_container .detail-box hr {
