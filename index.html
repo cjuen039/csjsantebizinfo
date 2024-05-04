@@ -227,8 +227,8 @@
     </div>
 
     <!-- about section -->
-
-    <section class="about_section layout_padding">
+    <a href="https://www.facebook.com/profile.php?id=61558630605773" class="about_link">
+    <section class="about_section layout_padding" id="about_section">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-10 ml-auto pr-0">
@@ -347,7 +347,7 @@
                       href="https://app.santebarley.com/shop/SPHN09368?sponsor=emzkee88&source=MySante&ctrycode=PH"
                     >
                       <img
-                        src="images/Products/barley_grass_powder.jpg"
+                        src="images/products/barley_grass_powder.jpg"
                         alt="Sante Barley Grass Powder"
                       />
                     </a>
@@ -365,7 +365,7 @@
                     <a
                       href="https://app.santebarley.com/shop/SN0929?sponsor=emzkee88&source=MySante&ctrycode=PH"
                       ><img
-                        src="images/Products/barley_capsules.jpg"
+                        src="images/products/barley_capsules.jpg"
                         alt="Sante Barley Capsules"
                     /></a>
                     <h3>Sante Barley Capsules</h3>
@@ -378,7 +378,7 @@
                     <a
                       href="https://app.santebarley.com/shop/SPHN02331?sponsor=emzkee88&source=MySante&ctrycode=PH"
                       ><img
-                        src="images/Products/daily_c_plus.jpg"
+                        src="images/products/daily_c_plus.jpg"
                         alt="Sante Barley Daily-C plus"
                     /></a>
                     <h3>Sante Barley Daily-C plus</h3>
@@ -391,7 +391,7 @@
                     <a
                       href="https://app.santebarley.com/shop/SB0204?sponsor=emzkee88&source=MySante&ctrycode=PH"
                       ><img
-                        src="images/Products/boost_coffee.jpg"
+                        src="images/products/boost_coffee.jpg"
                         alt="Sante Boost Coffee"
                     /></a>
                     <h3>Sante Boost Coffee</h3>
@@ -404,7 +404,7 @@
                     <a
                       href="https://app.santebarley.com/shop/SN0910?sponsor=emzkee88&source=MySante&ctrycode=PH"
                       ><img
-                        src="images/Products/fusion_coffee.jpg"
+                        src="images/products/fusion_coffee.jpg"
                         alt="Sante Fusion Coffee"
                     /></a>
                     <h3>Sante Fusion Coffee</h3>
@@ -418,7 +418,7 @@
                     <a
                       href="https://app.santebarley.com/shop/SB0113?sponsor=emzkee88&source=MySante&ctrycode=PH"
                       ><img
-                        src="images/Products/fit_n_trim.jpg"
+                        src="images/products/fit_n_trim.jpg"
                         alt="Sante Fit N' Trim"
                     /></a>
                     <h3>Sante Fit N' Trim</h3>
@@ -432,7 +432,7 @@
                     <a
                       href="https://app.santebarley.com/shop/SB0301?sponsor=emzkee88&source=MySante&ctrycode=PH"
                       ><img
-                        src="images/Products/choco_barley.jpg"
+                        src="images/products/choco_barley.jpg"
                         alt="Sante Choco Barley"
                     /></a>
                     <h3>Sante Choco Barley</h3>
@@ -445,7 +445,7 @@
                     <a
                       href="https://app.santebarley.com/shop?sponsor=emzkee88&source=MySante&ctrycode=PH"
                       ><img
-                        src="images/Products/More-Products.png"
+                        src="images/products/More-Products.png"
                         alt="View More Products"
                     /></a>
                     <h3>View More Products</h3>
@@ -543,6 +543,25 @@
     <script>
       document.getElementById("currentYear").textContent =
         new Date().getFullYear();
+    </script>
+    <script>
+      // Get the background color of the section
+var section = document.getElementById('about_section');
+var bgColor = window.getComputedStyle(section, null).getPropertyValue('background-color');
+
+// Convert the background color to RGB format
+var rgb = bgColor.match(/\d+/g);
+
+// Calculate luminance
+var luminance = 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2];
+
+// Change font color based on luminance
+var heading = document.querySelector('.about_section .heading_container h2');
+if (luminance > 128) {
+  heading.style.color = '#000000'; // Light background, use dark font color
+} else {
+  heading.style.color = '#ffffff'; // Dark background, use light font color
+}
     </script>
   </body>
 </html>
