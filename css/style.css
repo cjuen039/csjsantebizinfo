@@ -456,37 +456,68 @@ a:focus {
 }
 
 /* end slider section */
-.about_section {
-  color: #ffffff;
-}
-
-.about_section .heading_container h2 {
-  color: #ffffff;
-  /*margin-top: 25px;*/
-}
-
-.about_section .about_container {
-  padding: 15px;
-  background-image: url(../images/about-bg5.jpg);
+/*About_link*/
+.about_link {
+  display: block;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 
-.about_section .about_container .detail-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.about_link:hover {
+  /* Add hover styles here */
+  color: #086b15; /* Change text color on hover */
+  /*text-decoration: underline; /* Underline text on hover */
+}
+
+.about_section .container-fluid {
+  padding: 15px;
+}
+
+/* Rest of your CSS */
+
+.about_section {
+  color: #ffffff;
+}
+
+.about_section .heading_container h2 {
+  color: #0d581e7e;
+}
+
+.about_section h2:hover {
+  color: #0d581e7e; /* Change to your desired hover color */
+}
+
+.about_section .about_container {
+  padding: 15px;
+  background-image: url(../images/More-Products.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.about_section .about_container .row {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: left;
+  flex-wrap: wrap;
+}
+
+.about_section .about_container .detail-box {
+  margin-bottom: 20px;
+}
+
+.about_section .about_container .img-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.about_section .about_container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .about_section .about_container .detail-box p {
   margin-top: 25px;
-  /*margin-top: 8vw;*/
 }
 
 .about_section .about_container .detail-box hr {
@@ -510,8 +541,17 @@ a:focus {
 }
 
 .about_section .about_container .detail-box a:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #278647;
+  color: #ece2e2;
+}
+
+.about_section .about-container .about-description {
+  color: #ffffff;
+}
+
+.about_section .about_link:hover {
+  color: #ff0000; /* Change text color on hover */
+  /*text-decoration: underline; /* Underline text on hover */
 }
 
 /*.scrollable-content {
