@@ -466,7 +466,8 @@ a:focus {
 
 .about_link:hover {
   /* Add hover styles here */
-  color: #086b15; /* Change text color on hover */
+  color: #086b15;
+  /* Change text color on hover */
   /*text-decoration: underline; /* Underline text on hover */
 }
 
@@ -481,16 +482,17 @@ a:focus {
 }
 
 .about_section .heading_container h2 {
-  color: #0d581e7e;
+  color: #1bb13ea1;
 }
 
 .about_section h2:hover {
-  color: #0d581e7e; /* Change to your desired hover color */
+  color: #1994367e;
+  /* Change to your desired hover color */
 }
 
 .about_section .about_container {
   padding: 15px;
-  background-image: url(../images/Products/More-Products.png);
+  background-image: url(../images/More-Products.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -541,7 +543,7 @@ a:focus {
 }
 
 .about_section .about_container .detail-box a:hover {
-  background-color: #278647;
+  background-color: #115026;
   color: #ece2e2;
 }
 
@@ -550,7 +552,8 @@ a:focus {
 }
 
 .about_section .about_link:hover {
-  color: #ff0000; /* Change text color on hover */
+  color: #ff0000;
+  /* Change text color on hover */
   /*text-decoration: underline; /* Underline text on hover */
 }
 
@@ -562,6 +565,7 @@ a:focus {
 .class_section {
   color: #ffffff;
   position: relative;
+  margin-top: 100px;
 }
 
 .class_section .row > div {
@@ -995,21 +999,29 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #f5f5f5; /* Add your desired background color */
-  padding: 20px; /* Add padding for better spacing */
-  border-radius: 10px; /* Add some border radius for a nicer look */
-  margin: 0; /* Remove the default margin */
-  position: relative; /* Position relative for proper alignment */
+  background-color: #f5f5f5;
+  /* Add your desired background color */
+  padding: 20px;
+  /* Add padding for better spacing */
+  border-radius: 10px;
+  /* Add some border radius for a nicer look */
+  margin: 0;
+  /* Remove the default margin */
+  position: relative;
+  /* Position relative for proper alignment */
   display: flex;
-  flex-direction: column; /* Display icons and text in a column */
+  flex-direction: column;
+  /* Display icons and text in a column */
   align-items: center;
-  width: 100%; /* Extend the width to cover the full screen */
+  width: 100%;
+  /* Extend the width to cover the full screen */
 }
 
 .footer_section .social_box {
   display: flex;
   align-items: center;
-  margin-bottom: 15px; /* Add margin below the icons */
+  margin-bottom: 15px;
+  /* Add margin below the icons */
 }
 
 .footer_section .social_box a {
@@ -1017,8 +1029,10 @@ a:focus {
 }
 
 .footer_section .social_box a img {
-  max-width: 35px; /* Increase the maximum width of the logos */
-  max-height: 35px; /* Increase the maximum height of the logos */
+  max-width: 35px;
+  /* Increase the maximum width of the logos */
+  max-height: 35px;
+  /* Increase the maximum height of the logos */
 }
 
 .footer_section p {
@@ -1040,10 +1054,17 @@ a:focus {
   grid-gap: 20px;
 }
 
+.Products h2 {
+  color: #1c1b1b;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
 .product {
   background-color: #f9f9f9;
-  padding: 20px;
+  border: 1px solid #ddd;
   border-radius: 5px;
+  padding: 15px;
+  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
@@ -1053,45 +1074,47 @@ a:focus {
 }
 
 .product img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 
-.Products h2 {
-  color: hsl(0, 33%, 1%); /* Change to your desired font color */
-  font-weight: bold;
-}
-.product h3 {
-  margin-top: 10px;
-  color: #1c1b1b;
-}
-
-.product p {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #1c1b1b;
-}
-
 .product-details {
-  text-align: left; /* Adjust alignment as needed */
-  color: #1c1b1b;
+  margin-top: 15px;
+}
+
+.product-details h2 {
+  color: hsl(0, 33%, 1%);
+  font-weight: bold;
 }
 
 .product-details h3 {
-  margin-top: 10px;
-  font-size: 18px; /* Adjust font size as needed */
-  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
   color: #1c1b1b;
 }
 
 .product-details p {
   margin-top: 5px;
   font-size: 14px;
-  color: #1c1b1b; /* Adjust color as needed */
+  color: #1c1b1b;
 }
+
 .scrollable-content {
-  max-height: 1200px; /* Adjust the height as needed */
+  max-height: 1280px;
+  /* Adjust the height as needed */
   /*max-width: 300px; /* Adjust the width as needed */
   overflow-y: auto;
   /*overflow-x: hidden; /* Hide horizontal scrollbar if content overflows */
+}
+
+@media only screen and (max-width: 767px) {
+  .top_nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top_nav ul li {
+    margin-bottom: 20px;
+  }
 }
