@@ -1247,3 +1247,37 @@ a:focus {
     height: auto; /* Allow the height to adjust based on content */
   }
 }
+
+/*Video Section*/
+.video_container {
+  text-align: center;
+}
+
+.video_container h2 {
+  color: hsl(0, 33%, 1%);
+  font-weight: bold;
+  font-size: 45px; /* Adjust font size as needed */
+  font-family: Arial, sans-serif; /* Adjust font family as needed */
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
