@@ -1147,8 +1147,8 @@ a:focus {
 .product-card {
   flex: 0 0 auto;
   display: none;
-  width: 750px; /* Set the width of the frame */
-  height: 750px; /* Set the height of the frame */
+  width: 90%; /* Set the width of the frame */
+  height: 800px; /* Set the height of the frame */
   margin: auto; /* Center the frame horizontally */
   overflow: hidden; /* Hide any overflow content */
   transition: transform 0.5s ease;
@@ -1226,4 +1226,24 @@ a:focus {
 .prev-btn:hover,
 .next-btn:hover {
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .class_section {
+    padding: 20px; /* Add padding to the section */
+  }
+
+  .class_container {
+    padding: 0 10px; /* Add padding to the container */
+  }
+
+  .Products {
+    text-align: center; /* Center the content */
+  }
+
+  .product-card {
+    width: 90%; /* Set a smaller width for the product cards */
+    height: auto; /* Allow the height to adjust based on content */
+  }
 }
