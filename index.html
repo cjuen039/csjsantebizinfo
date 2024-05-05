@@ -718,6 +718,45 @@
         });
       });
     </script>
+<!--Script for videos-->
+    <script>
+let currentPage = 1;
+const videosPerPage = 3;
+const videoContainers = document.querySelectorAll('.video-container');
+
+function showVideos(startIndex, endIndex) {
+  videoContainers.forEach((container, index) => {
+    if (index >= startIndex && index < endIndex) {
+      container.classList.add('show');
+    } else {
+      container.classList.remove('show');
+    }
+  });
+}
+
+function prevVideos() {
+  if (currentPage > 1) {
+    currentPage--;
+    const startIndex = (currentPage - 1) * videosPerPage;
+    const endIndex = startIndex + videosPerPage;
+    showVideos(startIndex, endIndex);
+  }
+}
+
+function nextVideos() {
+  const totalVideos = videoContainers.length;
+  const totalPages = Math.ceil(totalVideos / videosPerPage);
+  if (currentPage < totalPages) {
+    currentPage++;
+    const startIndex = (currentPage - 1) * videosPerPage;
+    const endIndex = startIndex + videosPerPage;
+    showVideos(startIndex, endIndex);
+  }
+}
+
+// Show initial set of videos
+showVideos(0, videosPerPage);
+</script>
   </body>
 
 </html>
