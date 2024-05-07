@@ -80,22 +80,22 @@
                     id="navbarSupportedContent">
                     <br />
                     <br />
-                    <!--div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                    <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                           <a class="nav-link" href="index.html"
                             >Home <span class="sr-only">(current)</span></a
                           >
                         </li>
-                        <li class="nav-item">
+                        <!--li class="nav-item">
                           <a class="nav-link" href="about.html"> About </a>
-                        </li>
+                    </li-->
                         <li class="nav-item">
-                          <a class="nav-link" href="class.html"> Classes </a>
+                          <a class="nav-link" href="class.html"> Videos </a>
                         </li>
-                        <li class="nav-item">
+                        <!--li class="nav-item">
                           <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
+                    </li-->
                       </ul>
                       <form class="form-inline">
                         <button
@@ -502,72 +502,7 @@
     </div>
   </div>
 </section>
-<section class="video_section" style="margin-top: 20px;">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-10 col-lg-8 mx-auto">
-        <div class="video_container">
-          <h2>Watch Our Videos</h2>
-          <div class="video-grid">
-            <div class="video-container">
-              <div class="video-wrapper">
-                <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/p0D14lC5WNQ" title="Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="video-description">
-                <p>Made With Care: A Documentary on Sante Barley Grass</p>
-              </div>
-            </div>
-            <div class="video-container">
-              <div class="video-wrapper">
-                <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/mgdqlOKxgjA" title="Santé Barley by Kuya Kim Atienza" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="video-description">
-                <p>Testimonial by Kuya Kim</p>
-              </div>
-            </div>
-            <div class="video-container">
-              <div class="video-wrapper">
-                <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/iSchVTgii2Q" title="Santé Barley Product Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="video-description">
-                <p>Sante Barley Product Presentation</p>
-              </div>
-            </div>
-            <div class="video-container">
-              <div class="video-wrapper">
-                <iframe class="video-frame" width="1250" height="703" src="https://www.youtube.com/embed/k7hiQRHLPTQ" title="Why Is Sante Barley The Best Barley" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div class="video-description">
-                <p>Why Is Sante Barley The Best Barley</p>
-              </div>
-            </div>
-            <div class="video-container">
-              <div class="video-wrapper">
-                <iframe class="video-frame" width="810" height="425" src="https://www.youtube.com/embed/s2i8BCyC8UQ" title="SANTÉ BARLEY PARTNERSHIP PROGRAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div class="video-description">
-                <p>SANTÉ BARLEY PARTNERSHIP PROGRAM</p>
-              </div>
-            </div>
-            <div class="video-container">
-              <div class="video-wrapper">
-                <iframe width="1250" height="703" src="https://www.youtube.com/embed/KkpMAxYOmt8" title="Sante Business Presentation | Compensation Plan | Ways To Earn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div class="video-description">
-                <p>Sante Business Presentation | Compensation Plan | Ways To Earn</p>
-              </div>
-            </div>
-            <!-- Add more video containers here -->
-          </div>
-          <div class="vid-nav-btns">
-            <button class="vid-prev-btn" onclick="prevVideos()">&#10094; Prev</button>
-            <button class="vid-next-btn" onclick="nextVideos()">Next &#10095;</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>  
+
 <br />
 <br />
  <footer class="footer_section">
@@ -718,45 +653,7 @@
         });
       });
     </script>
-<!--Script for videos-->
-    <script>
-let currentPage = 1;
-const videosPerPage = 3;
-const videoContainers = document.querySelectorAll('.video-container');
 
-function showVideos(startIndex, endIndex) {
-  videoContainers.forEach((container, index) => {
-    if (index >= startIndex && index < endIndex) {
-      container.classList.add('show');
-    } else {
-      container.classList.remove('show');
-    }
-  });
-}
-
-function prevVideos() {
-  if (currentPage > 1) {
-    currentPage--;
-    const startIndex = (currentPage - 1) * videosPerPage;
-    const endIndex = startIndex + videosPerPage;
-    showVideos(startIndex, endIndex);
-  }
-}
-
-function nextVideos() {
-  const totalVideos = videoContainers.length;
-  const totalPages = Math.ceil(totalVideos / videosPerPage);
-  if (currentPage < totalPages) {
-    currentPage++;
-    const startIndex = (currentPage - 1) * videosPerPage;
-    const endIndex = startIndex + videosPerPage;
-    showVideos(startIndex, endIndex);
-  }
-}
-
-// Show initial set of videos
-showVideos(0, videosPerPage);
-</script>
   </body>
 
 </html>
