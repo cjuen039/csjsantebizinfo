@@ -124,8 +124,23 @@
                 background-color: #fff;
                 border-radius: 5px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                height: 400px;
                 overflow-y: auto;
+            }
+
+            /* Media query for smaller screens */
+            @media screen and (max-width: 768px) {
+                .container {
+                    height: 60vh;
+                    /* Adjusted height for smaller screens */
+                }
+            }
+
+            /* Media query for larger screens */
+            @media screen and (min-width: 768px) {
+                .container {
+                    height: 70vh;
+                    /* Adjusted height for larger screens */
+                }
             }
     </style>
 </head>
