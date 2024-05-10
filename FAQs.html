@@ -145,6 +145,23 @@
                     /* Adjusted height for larger screens */
                 }
             }
+
+            button {
+                padding: 10px 20px;
+                /* Adjust padding as needed */
+                margin: 5px;
+                /* Add margin for spacing between buttons */
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #6db817;
+                /* Change to your desired hover color */
+            }            
     </style>
 </head>
 
@@ -152,9 +169,10 @@
     <header class="header-class">
         <img src="images/sante-logo-green.png" alt="sante-logo-green.png">
         <nav class="header-class nav a">
-            <a href="index.html">Home</a>
-            <a href="https://www.mysante.com/store.htm?id=emzkee88">Official Store</a>
-            <a href="class.html">Watch Our Videos</a>
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='https://www.mysante.com/store.htm?id=emzkee88'">Official Store</button>
+            <button onclick="location.href='class.html'">Videos</button>
+            <button onclick="openMessenger()">Message Us</button>
         </nav>
     </header>
     <h1 class="h1">Product Frequently Ask Questions</h1>
@@ -503,6 +521,16 @@
         <p>Email: cendymay.santebiz@gmail.com | Santé ID: SAN773848108</p>
         <p>&copy; 2024 csjsantebiz</p>
     </footer>
+
+    <script>
+        function openMessenger() {
+          // Replace 'your_page_id' with your Facebook Page ID
+          var pageID = '309730608884497';
+    
+          // Open Facebook Messenger URL
+          window.open('https://m.me/' + pageID, '_blank');
+        }
+    </script>    
 
     <script>
         const questions = document.querySelectorAll('.question');
