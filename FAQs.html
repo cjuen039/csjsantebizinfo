@@ -8,131 +8,125 @@
     <title>Product FAQs</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                /* Ensure body takes up at least the full height of the viewport */
+            }
 
-        .header-class {
-            color: #fff;
-            background-color: #333;
-            text-align: center;
-            padding: 1rem 0;
-        }
+            .header-class {
+                color: #fff;
+                background-color: #333;
+                text-align: center;
+                padding: 1rem 0;
+            }
 
-        /* Original font size for larger screens */
-        .header-class nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            padding: 5px 10px;
-            font-size: 16px;
-            /* Adjust the original font size as needed */
-        }
-
-        /* Media query for smaller screens */
-        @media screen and (max-width: 768px) {
             .header-class nav a {
-                font-size: 14px;
-                /* Adjust the font size for smaller screens */
-            }
-        }
-
-        .header-class nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-        }
-
-        .h1 {
-            text-align: center;
-            color: rgb(3, 28, 110);
-            font-weight: bolder;
-        }
-
-        @keyframes blink {
-            0% {
-                opacity: 1;
+                color: #fff;
+                text-decoration: none;
+                margin: 0 10px;
+                padding: 5px 10px;
+                font-size: 16px;
             }
 
-            50% {
-                opacity: 0;
+            @media screen and (max-width: 768px) {
+                .header-class nav a {
+                    font-size: 14px;
+                }
             }
 
-            100% {
-                opacity: 1;
+            .header-class nav a:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 5px;
             }
-        }
 
-        .h2 {
-            text-align: center;
-            animation: blink 2s infinite;
-            color: crimson;
-        }
+            .h1 {
+                text-align: center;
+                color: rgb(3, 28, 110);
+                font-weight: bolder;
+            }
 
-        .li {
-            font-weight: bolder;
-        }
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            width: 100%;
-            position: relative;
-            /* Change position to relative */
-            margin-top: auto;
-            /* Add margin-top: auto to push it to the bottom */
-        }
+                50% {
+                    opacity: 0;
+                }
 
+                100% {
+                    opacity: 1;
+                }
+            }
 
-        .container {
-            max-width: 800px;
-            margin: 70px auto 50px;
-            /* Adjusted for footer */
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+            .h2 {
+                text-align: center;
+                animation: blink 2s infinite;
+                color: crimson;
+            }
 
-        .question {
-            background-color: #f4f4f4;
-            padding: 10px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            font-size: larger;
-            font-weight: bolder;
-        }
+            .li {
+                font-weight: bolder;
+            }
 
-        .answer {
-            display: none;
-            padding: 10px;
-        }
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 1rem 0;
+                width: 100%;
+                margin-top: auto;
+                /* Push footer to the bottom */
+            }
 
-        .social-links {
-            margin-top: 20px;
-        }
+            .container {
+                max-width: 800px;
+                margin: 70px auto 50px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
 
-        .social-links a {
-            display: inline-block;
-            margin-right: 10px;
-        }
+            .question {
+                background-color: #f4f4f4;
+                padding: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-size: larger;
+                font-weight: bolder;
+            }
 
-        .container {
-            max-width: 800px;
-            margin: 70px auto 50px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            /* Add these lines */
-            height: 400px;
-            /* Adjust the height as needed */
-            overflow-y: auto;
-            /* Add a vertical scrollbar when needed */
-        }
+            .answer {
+                display: none;
+                padding: 10px;
+            }
+
+            .social-links {
+                margin-top: 20px;
+            }
+
+            .social-links a {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 70px auto 50px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                height: 400px;
+                overflow-y: auto;
+            }
     </style>
 </head>
 
