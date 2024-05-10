@@ -1318,10 +1318,15 @@ footer {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin: 5px; /* Add margin for spacing between buttons */
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #6db817; /* Change to your desired hover color */
 }
