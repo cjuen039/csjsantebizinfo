@@ -467,6 +467,13 @@
       </div>
     </div>
   </section>
+    <div class="chat-container">
+    <div class="chat-box" id="chat-box">
+      <p>Message Us!.</p>
+      <button onclick="openMessenger()">Open Messenger</button>
+    </div>
+    </div>
+  <script src="script.js"></script>
   <br />
   <br />
   <footer>
@@ -484,6 +491,17 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+    function openMessenger() {
+      // Replace 'your_page_id' with your Facebook Page ID
+      var pageID = '309730608884497';
+
+      // Open Facebook Messenger URL
+      window.open('https://m.me/' + pageID, '_blank');
+    }
+
+  </script>
 
   <script>
     function openNav() {
