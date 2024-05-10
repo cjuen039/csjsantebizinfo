@@ -15,33 +15,33 @@
         }
 
         .header-class {
-            /* Add your styles here */
             color: #fff;
-            /* Set font color to white */
             background-color: #333;
-            /* Set background color to dark */
             text-align: center;
             padding: 1rem 0;
         }
 
+        /* Original font size for larger screens */
         .header-class nav a {
-            /* Add your styles here */
             color: #fff;
-            /* Set font color to white */
             text-decoration: none;
-            /* Remove underline */
             margin: 0 10px;
-            /* Add some spacing between links */
             padding: 5px 10px;
-            /* Add padding for better clickability */
+            font-size: 16px;
+            /* Adjust the original font size as needed */
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .header-class nav a {
+                font-size: 14px;
+                /* Adjust the font size for smaller screens */
+            }
         }
 
         .header-class nav a:hover {
-            /* Styles for when hovering over the links */
             background-color: rgba(255, 255, 255, 0.2);
-            /* Light background color on hover */
             border-radius: 5px;
-            /* Add some border radius */
         }
 
         .h1 {
