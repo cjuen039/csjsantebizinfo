@@ -1288,3 +1288,40 @@ footer {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
 }
+
+.chat-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(247, 243, 6);
+  font-weight: bolder;
+  color: #070707;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0.5;
+  }
+}
+
+
+.chat-box {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
