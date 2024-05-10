@@ -78,18 +78,19 @@
                   <br />
                   <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                     <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <button onclick="location.href='index.html'">Home</button>
+                      </li>
+                      <li class="nav-item">
+                        <button onclick="location.href='FAQs.html'">Product FAQs</button>
+                      </li>
                       <li class="nav-item active">
-                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                        <button onclick="location.href='https://www.mysante.com/store.htm?id=emzkee88'">Official Store
+                          <span class="sr-only">(current)</span></button>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="FAQs.html"> PRODUCT FAQs </a>
+                        <button onclick="openMessenger()">Message Us</button>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://www.mysante.com/store.htm?id=emzkee88">OFFICIAL STORE </a>
-                      </li>
-                      <!--li class="nav-item">
-                          <a class="nav-link" href="class.html">Watch Our Videos</a>
-                        </li-->
                     </ul>
                     <form class="form-inline">
                       <button class="btn ml-3 ml-lg-5 nav_search-btn" type="submit"></button>
@@ -256,6 +257,16 @@
 
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    function openMessenger() {
+      // Replace 'your_page_id' with your Facebook Page ID
+      var pageID = '309730608884497';
+
+      // Open Facebook Messenger URL
+      window.open('https://m.me/' + pageID, '_blank');
+    }
+  </script>
 
   <script>
     function openNav() {
