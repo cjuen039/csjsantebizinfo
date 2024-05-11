@@ -1,7 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #040000;
-  background-color: #5efd48;
+  background-color: #42f831;
 }
 
 .layout_padding {
@@ -77,9 +77,9 @@ body {
     left bottom,
     from(transparent),
     color-stop(transparent),
-    to(#63f74f)
+    to(#42f831)
   );
-  background: linear-gradient(to bottom, transparent, transparent, #63f74f);
+  background: linear-gradient(to bottom, transparent, transparent, #42f831);
 }
 
 .sub_page .hero_area {
