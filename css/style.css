@@ -1155,6 +1155,7 @@ footer {
 
 .product-details p {
   margin-bottom: 0; /* Remove margin from the bottom of the paragraph */
+  text-align: left;
 }
 
 .prev-btn {
@@ -1193,25 +1194,39 @@ footer {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
+/*Product Section*/
+.product-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.prod_class_container {
+  padding: 0 10px;
+  max-width: auto;
+  margin: 0 auto; 
+}
+
+.class_container {
+  padding: 0 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
   .class_section {
-    padding: 20px; /* Add padding to the section */
-  }
+    padding: 20px;
+  } 
 
-  .class_container {
-    padding: 0 10px; /* Add padding to the container */
-  }
-
-  .Products {
-    text-align: center; /* Center the content */
+  .Products{
+    text-align: center;
   }
 
   .product-card {
-    width: 90%; /* Set a smaller width for the product cards */
-    height: auto; /* Allow the height to adjust based on content */
+    width: 90%;
+    height: auto;
   }
-}
 
 /*Video Section*/
 .video-section {
