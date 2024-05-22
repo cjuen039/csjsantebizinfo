@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* Hide the links by default */
+}
+
+.container .links ul.active {
+    display: block; /* Display the links when active class is present */
+}
+
+.container .links ul li {
+    display: block; /* Display links in a block */
+}
+
+.container .links ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s linear;
+}
+
+.container .links ul li a:hover {
+    color: #6cf710;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+.container .logo img {
+    margin-left: 20px;
+    width: 100px;
+}
+
+.container .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px 0;
+    flex-wrap: wrap; /* Allow links to wrap */
+}
+
+.container .links a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    margin: 0 20px;
+    transition: 0.3s linear;
+    padding: 14px 20px;
+}
+
+.container .menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.links a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    background-color: #f74f10;
+    height: 3.5px;
+    transition: 0.3s linear;
+}
+
+.links a:hover::before,
+.links a:hover {
+    color: #f74f10;
+    width: 100%;
+}
+
+.search i {
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .container .menu-icon {
+        display: none;
+    
+    .container .links {
+        display: none; /* Hide the links by default */
+        flex-direction: column; /* Display links in a column */
+        width: 100%;
+        position: absolute; /* Position the links absolutely to overlay the whole screen */
+        top: 10vh; /* Adjust position to account for navbar height */
+        left: 0; /* Align links to the left */
+        background-color: black; /* Add a background color */
+        padding-top: 20px; /* Add padding at the top */
+        z-index: 1; /* Ensure links are above other content */
+    }
+}
+
+ /*   @media (max-width: 768px) {
+        .container .links a {
+            text-align: left;
+            margin: 0;
+            padding: 10px 20px;
+            border-top: 1px solid #444;
+            width: 100%; /* Ensure links take full width 
+        }*/
+
+    .container .links.active {
+        display: flex;
+    }
+
+    .container .links a {
+        text-align: left;
+        margin: 0;
+        padding: 10px 20px;
+        border-top: 1px solid #444;
+        width: 100%; /* Ensure links take full width */
+    }
+
+    .container .links a:first-child {
+        border-top: none;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+/* Section Starts */
+
+section {
+    width: 100%;
+    height: 90vh;
+}
+
+section .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.content .main-content {
+    color: white;
+    max-width: 600px;
+    width: 100%;
+}
+
+.main-content h1 {
+    font-size: clamp(2rem, 1rem + 5vw, 4rem);
+}
+
+.main-content h2 {
+    color: #78f710;
+    font-size: clamp(2rem, 1rem + 5vw, 3.5rem);
+}
+
+.main-content p {
+    margin-top: 10px;
+    color: #635e5c;
+}
+
+.main-content .order {
+    display: flex;
+    margin: 20px 10px;
+    width: 100%;
+    justify-content: space-around;
+    min-height: 7vh;
+}
+
+.order h3 {
+    font-size: 1.8rem;
+}
+
+.order button {
+    min-width: 50%;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #f74f10 40%, #8a3313);
+    color: white;
+    font-weight: 700;
+    padding: 0 2px;
+    font-size: clamp(0.6rem, 1rem 5vw, 3rem);
+    transition: 0.1s linear;
+}
+
+.order button a{
+    color:white;
+    font-size: xx-large;
+}
+
+.order button:hover {
+    box-shadow: 0 0 30px #f74f10;
+    background: linear-gradient(to bottom right, #8a3313, #f74f10 40%);
+}
+
+.content .image img {
+    max-width: 450px;
+    width: 60%;
+    height: auto;
+    margin-right: 100px;
+    transform: rotate(40deg) translateX(900px);
+    filter: drop-shadow(-10px -10px 200px #37f710);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 800px) {
+    .content {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .main-content {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 884px) {
+    .content .image img {
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 440px) {
+    .links {
+        display: none;
+    }
+
+    .content .image img {
+        width: 100
+    }
+}
+
+/*.image {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    width: 65%;
+    height: auto;
+    max-width: 100%;
+}*/

@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+}
+
+.nav-container{
+    padding: 0 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .other,
+.nav-container .links,
+.icons{
+    display: flex;
+}
+
+.nav-container .links a,
+.icons div i{
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin: 0 20px;
+}
+
+.nav-container .links a{
+    margin: 0 25px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover{
+    color: #fe6278;
+}
+
+.dropdown{
+    width: 100%;
+    height: auto;
+    transform: translateY(-500px);
+    position: absolute;
+    top: 0;
+    backdrop-filter: brightness(40%) blur(5px);
+    transition: transform 0.3s linear;
+}
+
+.dropdown .links{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.dropdown .links .link{
+    padding: 15px 0;
+    transition: 0.2s linear;
+}
+
+.dropdown .links .link a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown .links .link:hover{
+    background-color: #fe6278;
+}
+
+.dropdown .cancel{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: 0.2s linear;
+}
+
+.dropdown .cancel:hover{
+    transform: rotate(90deg);
+}
+
+/* Section Start */
+
+section{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .image{
+    max-width: 700px;
+}
+
+.image img{
+    width: 100%;
+}
+
+.content{
+    width: 40%;
+    margin-left: 50px;
+}
+
+.content h2{
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: #fe6278;
+}
+
+.content h1{
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-weight: 700;
+}
+
+.content h1 span{
+    color: #fe6278;
+}
+
+.content hr{
+    height: 5px;
+    background-color: #fe6278;
+    border: none;
+    border-radius: 5px;
+}
+
+.content .fir-line{
+    width: 10%;
+}
+
+.content .sec-line{
+    width: 7%;
+    margin-top: 5px;
+}
+
+.content p{
+    margin-top: 15px;
+}
+
+.content .btn{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.content .btn button{
+    width: 25%;
+    height: 5vh;
+    font-size: 100%;
+    font-weight: 600;
+    color: white;
+    background-color: #fe6278;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    transition: 0.2s linear;
+}
+
+.content .btn button:hover{
+    box-shadow: 0 0 10px 5px #fe6278;
+}
+
+.content .other-shoes{
+    margin:  0 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .other-shoes .shoes{
+    display: flex;
+    margin-top: 30px;
+    border-radius: 10px;
+    flex-direction: column;
+    width:25%;
+    box-shadow: 0 0 10px black;
+}
+
+.content .other-shoes .shoes img{
+    width: 100px;
+    margin-top: -40px 0 10px 0;
+    transition: 0.2s linear;
+}
+
+.shoes img:hover{
+    scale: 1.2;
+}
+
+.other-shoes .shoes label{
+    text-align: center;
+    margin: 10px 0;
+}
+
+@media (max-width:884px){
+    body{
+        background-image: url(bg2.png);
+    }
+
+    .nav-container .logo img{
+        filter: drop-shadow(0 0 10px black);
+    }
+
+    section{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content .other-shoes{
+        min-height: 21vh;
+        margin-top: 15px 10%;
+    }
+
+    .other-shoes .shoes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:440px){
+    .nav-container .links{
+        display: none;
+    }
+
+    .image img{
+        width: 65%;
+    }
+
+    .content .other-shoes{
+        width: 100%;
+        margin:15px 0 ;
+    }
+   
+}
