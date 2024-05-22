@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Santé Barley</title>
+    <link rel="icon" href="icons/sante icon.png" type="image/png">
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="icons/sante-logo-green.png" alt="Logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <li><a href="#" onclick="openMessenger(); return false;">Message Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <div class="main-content">
+                <h1 data-aos="fade-right" data-aos-duration="2000">SANTE PURE BARLEY</h1>
+                <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">Sante Barley Daily-C</h2>
+                <h4 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">Immune Boost Formula</h4>
+                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">
+                    Santé Barley Daily-C is a premium dietary supplement designed to combine the powerful benefits of
+                    pure organic young barley grass with the immune-boosting properties of Vitamin C. This product is
+                    specially formulated to support overall health and wellness, providing essential nutrients that help
+                    strengthen the immune system, enhance energy levels, and promote general well-being.</p>
+                <div class="order">
+                    <h3 data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="800">₱ 1,060.00</h3>
+                    <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800"><a
+                            href="https://app.santebarley.com/shop/SN0207?sponsor=emzkee88&source=MySante&ctrycode=PH">ORDER
+                            NOW</a></button>
+                </div>
+                <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800" onclick="openModal()">Read
+                    More</button>
+            </div>
+            <div class="image">
+                <img src="products/SN0207_L.jpg" data-aos="zoom-in" data-aos-duration="2000">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Santé Barley Daily-C</h2>
+            <p><strong>Ingredients:</strong><br>100% Pure Organic Young Barley Grass, Vitamin C (Sodium Ascorbate)</p>
+            <p><strong>Nutritional Benefits:</strong><br>Rich in Nutrients, High in Fiber, Antioxidants, Chlorophyll,
+                Immune Support</p>
+            <p><strong>Health Benefits:</strong><br>Boosts Immune System, Supports Digestive Health, Energy and
+                Vitality, Detoxification, Skin Health</p>
+            <p><strong>Usage Instructions:</strong><br>Take 1-2 capsules daily with water. For best results, take before
+                meals to ensure optimal absorption.</p>
+            <p><strong>Storage Instructions:</strong><br>Store in a cool, dry place away from direct sunlight.</p>
+            <p><strong>Packaging:</strong><br>The product comes in a box containing 100 capsules, each capsule
+                delivering a potent dose of organic barley grass and Vitamin C.</p>
+            <p><strong>Certifications and Quality Assurance:</strong><br>Certified Organic, Quality Tested</p>
+            <p><strong>Ideal For:</strong><br>Individuals looking to enhance their immune system and overall health.
+                Those seeking to boost their energy levels and vitality. People aiming to improve their digestive health
+                and detoxify their body. Anyone looking for a comprehensive supplement that combines the benefits of
+                barley grass and Vitamin C.</p>
+            <p><strong>Additional Information:</strong><br>Free from artificial colors, flavors, and preservatives.
+                Suitable for vegetarians and vegans. Gluten-free and non-GMO.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 1
+        });
+
+        function toggleMenu() {
+            const links = document.querySelector('.container .links');
+            links.classList.toggle('active');
+        }
+
+        function openMessenger() {
+            var pageID = '309730608884497';
+            window.open('https://m.me/' + pageID, '_blank');
+        }
+
+        // Modal functions
+        function openModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function (event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

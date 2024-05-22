@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Santé Barley</title>
+    <link rel="icon" href="icons/sante icon.png" type="image/png">
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="icons/sante-logo-green.png" alt="Logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <li><a href="#" onclick="openMessenger(); return false;">Message Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <div class="main-content">
+                <h1 data-aos="fade-right" data-aos-duration="2000">SANTE PURE BARLEY</h1>
+                <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">Santé NutriPair Set</h2>
+                <h4 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">Complete Health Package</h4>
+                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">
+                    The Santé NutriPair Set is a comprehensive health and wellness package that combines two essential
+                    dietary supplements to support overall well-being. This set includes the Santé Barley Daily-C and
+                    the Santé Pure Barley Grass Powder, providing a powerful combination of nutrients designed to boost
+                    immunity, enhance energy levels, and promote optimal health.<br />
+                    The Santé NutriPair Set offers a convenient and effective way to optimize your health and vitality,
+                    providing a synergistic blend of nutrients to support your wellness journey.</p>
+                <div class="order">
+                    <h3 data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="800">₱ 3,120.00</h3>
+                    <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800"><a
+                            href="https://app.santebarley.com/shop/SN1301?sponsor=emzkee88&source=MySante&ctrycode=PH">ORDER
+                            NOW</a></button>
+                </div>
+                <button data-aos=" zoom-in-left" data-aos-duration="2000" data-aos-delay="800"
+                            onclick="openModal()">Read
+                            More</button>
+                </div>
+                <div class="image">
+                    <img src="products/SN1301_L.jpg" data-aos="zoom-in" data-aos-duration="2000">
+                </div>
+            </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Santé NutriPair Set</h2>
+            <p><strong>Description:</strong><br>The Santé NutriPair Set is a comprehensive health and wellness package
+                that combines two essential dietary supplements to support overall well-being.</p>
+            <p><strong>Santé Barley Daily-C:</strong><br>Santé Barley Daily-C is a premium dietary supplement that
+                combines the potent benefits of pure organic young barley grass with the immune-boosting properties of
+                Vitamin C (Sodium Ascorbate).</p>
+            <p><strong>Santé Pure Barley Grass Powder:</strong><br>Santé Pure Barley Grass Powder is made from 100% pure
+                organic young barley grass, harvested at its peak nutritional content.</p>
+            <p><strong>Key Benefits:</strong><br>Immune Support, Energy and Vitality, Digestive Health, Detoxification,
+                Antioxidant Protection.</p>
+            <p><strong>Usage Instructions:</strong><br>Take Santé Barley Daily-C: 1-2 capsules daily with water. Mix
+                Santé Pure Barley Grass Powder: 1 tablespoon with water or your favorite beverage, preferably before
+                meals.</p>
+            <p><strong>Packaging:</strong><br>The Santé NutriPair Set comes with Santé Barley Daily-C (60 capsules) and
+                Santé Pure Barley Grass Powder (200g canister).</p>
+            <p><strong>Certifications and Quality Assurance:</strong><br>Certified Organic, Quality Tested.</p>
+            <p><strong>Ideal For:</strong><br>Individuals seeking to boost their immune system and overall health. Those
+                looking for natural and organic supplements to support their well-being.</p>
+            <p><strong>Additional Information:</strong><br>Free from artificial colors, flavors, and preservatives.
+                Suitable for vegetarians and vegans. Gluten-free and non-GMO.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 1
+        });
+
+        function toggleMenu() {
+            const links = document.querySelector('.container .links');
+            links.classList.toggle('active');
+        }
+
+        function openMessenger() {
+            var pageID = '309730608884497';
+            window.open('https://m.me/' + pageID, '_blank');
+        }
+
+        // Modal functions
+        function openModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function (event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product FAQs</title>
-    <link rel="icon" href="images/sante icon.png" type="image/png">
+    <link rel="icon" href="icons/sante icon.png" type="image/png">
     <style>
         body {
             body {
@@ -66,16 +66,12 @@
                 }
             }
 
-            .h2 {
+            .h2-blink {
                 text-align: center;
                 animation: blink 2s infinite !important;
                 color: crimson;
                 font-weight: bolder;
                 background-color: rgb(190, 223, 44);
-            }
-
-            .li {
-                font-weight: bolder;
             }
 
             footer {
@@ -161,13 +157,13 @@
             button:hover {
                 background-color: #6db817;
                 /* Change to your desired hover color */
-            }            
+            }
     </style>
 </head>
 
 <body>
     <header class="header-class">
-        <img src="images/sante-logo-green.png" alt="sante-logo-green.png">
+        <img src="icons/sante-logo-green.png" alt="sante-logo-green.png">
         <nav class="header-class nav a">
             <button onclick="location.href='index.html'">Home</button>
             <button onclick="location.href='https://www.mysante.com/store.htm?id=emzkee88'">Official Store</button>
@@ -178,7 +174,7 @@
     <h1 class="h1">Product Frequently Ask Questions</h1>
     <div class="container">
         <div class="question">
-            <h2 class="h2">REMINDER: WHY IT PAYS TO CHECK!</h2>
+            <h2 class="h2-blink">REMINDER: WHY IT PAYS TO CHECK!</h2>
         </div>
         <div class="answer">
             <p>How can I ensure that the products I buy are legit? How do I ensure safety and quality from the Santé
@@ -500,7 +496,7 @@
         </div>
 
         <!-- Add more FAQ items as needed -->
-        <h2 class="h2">DISCLAIMER!</h2>
+        <h2 class="h2-blink">DISCLAIMER!</h2>
         <p>While Santé Barley offers numerous health benefits, it is essential to remember that it is not a
             substitute
             for a balanced diet and healthy lifestyle. Incorporating Santé Barley into your daily routine should
@@ -511,26 +507,24 @@
 
     <footer>
         <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61558630605773"><img src="images/facebook.png" alt /></a>
-            <a href="https://www.mysante.com/store.htm?id=emzkee88"><img src="images/mysantestore-logo-footer.png"
+            <a href="https://www.facebook.com/profile.php?id=61558630605773"><img src="icons/facebook.png" alt /></a>
+            <a href="https://www.mysante.com/store.htm?id=emzkee88"><img src="icons/mysantestore-logo-footer.png"
                     alt /></a>
-            <!--a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a-->
         </div>
         </br>
         <p>Email: cendymay.santebiz@gmail.com | Santé ID: SAN773848108</p>
-        <p>&copy; 2024 csjsantebiz</p>
+        <p>&copy; 2024 csjsantebiz. All rights reserved.</p>
     </footer>
 
     <script>
         function openMessenger() {
-          // Replace 'your_page_id' with your Facebook Page ID
-          var pageID = '309730608884497';
-    
-          // Open Facebook Messenger URL
-          window.open('https://m.me/' + pageID, '_blank');
+            // Replace 'your_page_id' with your Facebook Page ID
+            var pageID = '309730608884497';
+
+            // Open Facebook Messenger URL
+            window.open('https://m.me/' + pageID, '_blank');
         }
-    </script>    
+    </script>
 
     <script>
         const questions = document.querySelectorAll('.question');

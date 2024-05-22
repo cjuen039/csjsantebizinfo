@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Santé Barley</title>
+    <link rel="icon" href="icons/sante icon.png" type="image/png">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="icons/sante-logo-green.png" alt="Logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <!--li><a href="#craft">Craft</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
+                    <li><a href="#blog">Blog</a></li-->
+                    <li><a href="#" onclick="openMessenger(); return false;">Message Us</a></li>
+                </ul>
+            </div>
+            <!--div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div-->
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <div class="main-content">
+                <h1 data-aos="fade-right" data-aos-duration="2000">SANTE PURE BARLEY</h1>
+                <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">SANTÉ Barley Powder with Stevia
+                    Canister (200g)
+                </h2>
+                <h4 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">Green Boost Delight</h4>
+                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">
+                    Santé Barley Powder with Stevia is a premium dietary supplement that combines the nutritional
+                    benefits of pure organic young barley grass with the natural sweetness of stevia. This product is
+                    designed for those who seek a healthy and convenient way to enhance their diet without added sugars.
+                    It comes in a 200g canister, ensuring ease of use and freshness.</br>
+                    Santé Barley Powder with Stevia offers a delicious and nutritious way to incorporate the benefits of
+                    barley grass into your daily routine, supporting your journey to better health and wellness.</p>
+                <div class="order">
+                    <h3 data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="800">₱ 2,740.00</h3>
+                    <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800"><a
+                            href="https://app.santebarley.com/shop/SPHN09369?sponsor=emzkee88&source=MySante&ctrycode=PH">ORDER
+                            NOW</a></button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="products/SPHN09369_L.jfif" data-aos="zoom-in" data-aos-duration="2000">
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 1
+        });
+    </script>
+
+    <script>
+        function toggleMenu() {
+            const links = document.querySelector('.container .links');
+            links.classList.toggle('active');
+        }
+
+        function openMessenger() {
+            // Replace 'your_page_id' with your Facebook Page ID
+            var pageID = '309730608884497';
+
+            // Open Facebook Messenger URL
+            window.open('https://m.me/' + pageID, '_blank');
+        }
+    </script>
+</body>
+
+</html>

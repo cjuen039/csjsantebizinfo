@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Santé Barley</title>
+    <link rel="icon" href="icons/sante icon.png" type="image/png">
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="icons/sante-logo-green.png" alt="Logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <li><a href="#" onclick="openMessenger(); return false;">Message Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <div class="main-content">
+                <h1 data-aos="fade-right" data-aos-duration="2000">SANTE PURE BARLEY</h1>
+                <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">Santé Choco Barley (15gms x 10
+                    sachets)</h2>
+                <h4 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">Indulgent Chocolate Delight</h4>
+                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">
+                    Satisfy your chocolate cravings guilt-free with Santé Choco Barley (15gms x 10 sachets), a
+                    delectable fusion of rich cocoa flavor and the nutritional powerhouse of barley.<br />
+                    Treat yourself to the irresistible taste of chocolate with Santé Choco Barley. With its rich flavor
+                    and nutritional benefits, it's the perfect indulgence for a healthier, happier you.</p>
+                <div class="order">
+                    <h3 data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="800">₱ 370.00</h3>
+                    <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800"><a
+                            href="https://app.santebarley.com/shop/SB0301?sponsor=emzkee88&source=MySante&ctrycode=PH">ORDER
+                            NOW</a></button>
+                </div>
+                <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800" onclick="openModal()">Read
+                    More</button>
+            </div>
+            <div class="image">
+                <img src="products/SB0301_L.png" data-aos="zoom-in" data-aos-duration="2000">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Santé Choco Barley (15gms x 10 sachets)</h2>
+            <p><strong>Description:</strong><br>Satisfy your chocolate cravings guilt-free with Santé Choco Barley
+                (15gms x 10 sachets), a delectable fusion of rich cocoa flavor and the nutritional powerhouse of
+                barley.<br />
+                Treat yourself to the irresistible taste of chocolate with Santé Choco Barley. With its rich flavor and
+                nutritional benefits, it's the perfect indulgence for a healthier, happier you.
+            </p>
+            <p><strong>Key Features:</strong><br>
+                - Irresistible Chocolate Flavor<br>
+                - Nutrient-Rich Superfood<br>
+                - Energy and Vitality<br>
+                - Convenient Sachet Packaging
+            </p>
+            <p><strong>Ideal For:</strong><br>Chocolate lovers seeking a nutritious and delicious alternative to
+                traditional chocolate treats. Health-conscious individuals looking to satisfy their sweet cravings
+                without compromising on nutrition.</p>
+            <p><strong>Additional Information:</strong><br>Each box contains 10 sachets. Suitable for vegetarians and
+                vegans. Gluten-free and non-GMO.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 1
+        });
+
+        function toggleMenu() {
+            const links = document.querySelector('.container .links');
+            links.classList.toggle('active');
+        }
+
+        function openMessenger() {
+            var pageID = '309730608884497';
+            window.open('https://m.me/' + pageID, '_blank');
+        }
+
+        // Modal functions
+        function openModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
