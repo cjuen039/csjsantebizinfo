@@ -231,7 +231,7 @@ section .content {
 
 .content .image img {
     max-width: 450px;
-    width: 60%;
+    width: auto;
     height: auto;
     margin-right: 100px;
     transform: rotate(40deg) translateX(900px);
