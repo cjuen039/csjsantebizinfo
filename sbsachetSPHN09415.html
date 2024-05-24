@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Santé Barley</title>
+    <link rel="icon" href="icons/sante icon.png" type="image/png">
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="icons/sante-logo-green.png" alt="Logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <li><a href="#" onclick="openMessenger(); return false;">Message Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <div class="main-content">
+                <h1 data-aos="fade-right" data-aos-duration="2000">SANTE PURE BARLEY</h1>
+                <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">Santé Barley Powder (Certified Organic) 3g x 10s</h2>
+                <h4 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">Your Daily Dose of Pure Wellness</h4>
+                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">
+                    Elevate your wellness routine with Santé Barley Powder, a premium health supplement crafted from
+                    100% young organic barley leaves. Each box contains 10 convenient sachets, each filled with 3 grams
+                    of pure, nutrient-dense barley powder, designed to support your overall health and vitality.<br />
+                    Transform your health with the natural power of Santé Barley Powder. Order now and take the first
+                    step towards a healthier, more vibrant you!</p>
+                <div class="order">
+                    <h3 data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="800">₱ 720.00</h3>
+                    <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800"><a
+                            href="https://app.santebarley.com/shop/SPHN09415?sponsor=emzkee88&source=MySante&ctrycode=PH">ORDER
+                            NOW</a></button>
+                </div>
+                <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800" onclick="openModal()">Read
+                    More</button>
+            </div>
+            <div class="image">
+                <img src="products/SPHN09415_Lbg.png" data-aos="zoom-in" data-aos-duration="2000">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Santé Barley Powder (Certified Organic) 3g x 10s</h2>
+            <p><strong>Description:</strong><br>Santé Barley Powder (Certified Organic) 3g x 10s is a convenient and
+                potent dietary supplement crafted from pure organic young barley grass. Sourced from certified organic
+                farms, this premium powder is packed with essential nutrients to support overall health and
+                vitality.<br />Santé Barley Powder (Certified Organic) 3g x 10s offers a convenient and effective way to
+                harness the nutritional power of barley grass, providing essential nutrients to support your journey
+                towards optimal health and wellness.</p>
+            <p><strong>Key Features:</strong><br>
+            <ul>
+                <li><strong>Certified Organic:</strong> Derived from young barley grass cultivated on certified organic
+                    farms, ensuring purity and quality.</li>
+                <li><strong>Pure and Natural:</strong> Contains 100% pure barley grass, rich in vitamins, minerals,
+                    enzymes, antioxidants, and chlorophyll.</li>
+                <li><strong>Convenient Packaging:</strong> Each box contains 10 sachets, making it easy to take
+                    on-the-go.</li>
+                <li><strong>Nutrient-Rich Superfood:</strong> Provides a dense nutritional profile to support various
+                    bodily functions and promote overall well-being.</li>
+                <li><strong>Health Benefits:</strong> Boosts immune system, supports digestion, enhances energy levels,
+                    detoxifies the body, and more.</li>
+            </ul>
+            </p>
+            <p><strong>Usage Instructions:</strong><br>Mix one sachet (3g) with water, juice, or your favorite beverage.
+                Take one sachet daily, preferably on an empty stomach for optimal absorption.</p>
+            <p><strong>Ideal For:</strong><br>Individuals seeking to boost their overall health and vitality naturally.
+            </p>
+            <p><strong>Additional Information:</strong><br>Free from artificial colors, flavors, and preservatives.
+                Suitable for vegetarians and vegans. Gluten-free and non-GMO.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 1
+        });
+
+        function toggleMenu() {
+            const links = document.querySelector('.container .links');
+            links.classList.toggle('active');
+        }
+
+        function openMessenger() {
+            var pageID = '309730608884497';
+            window.open('https://m.me/' + pageID, '_blank');
+        }
+
+        // Modal functions
+        function openModal() {
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function (event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
