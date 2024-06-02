@@ -1,555 +1,686 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Santé Barley</title>
+    <link rel="icon" href="icons/sante icon.png" type="image/png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/styles.css" />
-  <title>Santé Barley</title>
-  <link rel="icon" href="icons/sante icon.png" type="image/png">
-</head>
-
-<body>
-  <header class="header">
-    <nav class="nav__container ">
-      <div class="nav__logo">
-        <a href="https://www.mysante.com/store.htm?id=emzkee88">
-          <img src="icons/sante-logo-green.png" alt="Santé Logo" />
-        </a>
+  <body>
+    <header class="header">
+      <nav class="nav__container">
+        <div class="nav__logo">
+          <a href="https://www.mysante.com/store.htm?id=emzkee88">
+            <img src="icons/sante-logo-green.png" alt="Santé Logo" />
+          </a>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="#choose">About</a></li>
+          <li class="link"><a href="#offer">Products</a></li>
+          <li class="link"><a href="#testimonial">Testimonials</a></li>
+          <li class="link"><a href="#blog">Blog</a></li>
+          <li class="link"><a href="class.html">Watch</a></li>
+          <li class="link">
+            <a href="#" onclick="openMessenger(); return false;">Message Us</a>
+          </li>
+        </ul>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <h1>Live More. Do More.</h1>
+        <p>Embrace vitality, achieve more with Santé Barley</p>
+        <a href="#choose"><i class="ri-arrow-down-double-line"></i></a>
       </div>
-      <ul class="nav__links" id="nav-links">
-        <li class="link"><a href="#choose">About</a></li>
-        <li class="link"><a href="#offer">Products</a></li>
-        <li class="link"><a href="#testimonial">Testimonials</a></li>
-        <li class="link"><a href="#blog">Blog</a></li>
-        <li class="link"><a href="class.html">Watch</a></li>
-        <li class="link"><a href="#" onclick="openMessenger(); return false;">Message Us</a></li>
-      </ul>
-      <div class="nav__menu__btn" id="menu-btn">
-        <span><i class="ri-menu-line"></i></span>
-      </div>
-    </nav>
-    <div class="section__container header__container" id="home">
-      <h1>Live More. Do More.</h1>
-      <p>Embrace vitality, achieve more with Santé Barley</p>
-      <a href="#choose"><i class="ri-arrow-down-double-line"></i></a>
-    </div>
-  </header>
-  <section class="section__container choose__container" id="choose">
-    <!--img class="choose__bg" src="#" alt="bg" /-->
-    <div class="choose__content">
-      <h2 class="section__header">Why Choose Us</h2>
-      <p class="section__subheader">
-        At Santé Barley, we are committed to providing the highest quality barley products to support your health and
-        well-being. Our organically grown barley is rich in essential vitamins, minerals, and antioxidants, offering
-        numerous health benefits. With a trusted reputation built on years of experience and thousands of satisfied
-        customers, Sante Barley stands out as a leader in natural wellness. Choose Sante Barley for a healthier, more
-        vibrant life.
-      </p>
-      <div class="choose__grid">
-        <div class="choose__card">
-          <span><i class="ri-leaf-line"></i></span>
-          <h4>Premium Quality</h4>
-          <p>
-            Our products are
-            made from the finest organic barley grass, carefully
-            harvested and processed to preserve their
-            nutritional integrity.
-          </p>
-        </div>
-        <div class="choose__card">
-          <span><i class="ri-test-tube-line"></i></span>
-          <h4>Scientifically Proven</h4>
-          <p>
-            Backed by
-            scientific research and testing, our products are
-            proven to deliver real results for health and
-            wellness.
-          </p>
-        </div>
-        <div class="choose__card">
-          <span><i class="ri-shield-check-line"></i></span>
-          <h4>Trusted Brand</h4>
-          <p>
-            With years of
-            experience and thousands of satisfied customers,
-            Sante Barley is a trusted name in the wellness
-            industry.
-          </p>
-        </div>
-        <div class="choose__card">
-          <span><i class="ri-loop-right-line"></i></span>
-          <h4>Commitment to Sustainability</h4>
-          <p>
-            We are committed to sustainability and environmental
-            responsibility, from our sourcing practices to our
-            packaging and manufacturing processes.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="choose__image">
-      <img src="images/K4.png" alt="choose" />
-    </div>
-  </section>
-
-  <section class="offer__container" id="offer">
-    <div class="offer__grid__top">
-      <img src="products/offer-1.jfif" alt="offer" />
-      <img src="products/offer-2.jfif" alt="offer" />
-      <img src="products/offer-3.jfif" alt="offer" />
-      <img src="products/offer-4.jfif" alt="offer" />
-      <div class="offer__content">
-        <h2 class="section__header">Smart Offers</h2>
+    </header>
+    <section class="section__container choose__container" id="choose">
+      <!--img class="choose__bg" src="#" alt="bg" /-->
+      <div class="choose__content">
+        <h2 class="section__header">Why Choose Us</h2>
         <p class="section__subheader">
-          Unlock a Lifetime of Benefits: Become a Sante Partner Today! Whether you seek exclusive discounts as a Sante
-          Barley enthusiast or aspire to
-          thrive as a Sante Business Owner, our partnership offers endless opportunities for growth and prosperity.
-          Being a Sante partner offers the advantage of building a successful business while promoting health and
-          wellness, supported by a reputable brand and a strong community.
+          At Santé Barley, we are committed to providing the highest quality
+          barley products to support your health and well-being. Our organically
+          grown barley is rich in essential vitamins, minerals, and
+          antioxidants, offering numerous health benefits. With a trusted
+          reputation built on years of experience and thousands of satisfied
+          customers, Sante Barley stands out as a leader in natural wellness.
+          Choose Sante Barley for a healthier, more vibrant life.
         </p>
-        <button class="btn" onclick="window.location.href='https://www.mysante.com/store.htm?id=emzkee88'">Inquire
-          Now</button>
+        <div class="choose__grid">
+          <div class="choose__card">
+            <span><i class="ri-leaf-line"></i></span>
+            <h4>Premium Quality</h4>
+            <p>
+              Our products are made from the finest organic barley grass,
+              carefully harvested and processed to preserve their nutritional
+              integrity.
+            </p>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-test-tube-line"></i></span>
+            <h4>Scientifically Proven</h4>
+            <p>
+              Backed by scientific research and testing, our products are proven
+              to deliver real results for health and wellness.
+            </p>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-shield-check-line"></i></span>
+            <h4>Trusted Brand</h4>
+            <p>
+              With years of experience and thousands of satisfied customers,
+              Sante Barley is a trusted name in the wellness industry.
+            </p>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-loop-right-line"></i></span>
+            <h4>Commitment to Sustainability</h4>
+            <p>
+              We are committed to sustainability and environmental
+              responsibility, from our sourcing practices to our packaging and
+              manufacturing processes.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="offer__grid__bottom">
-      <div class="offer__content">
-        <h2 class="section__header">OUR BEST SELLERS</h2>
+      <div class="choose__image">
+        <img src="images/K4.png" alt="choose" />
+      </div>
+    </section>
+
+    <section class="offer__container" id="offer">
+      <div class="offer__grid__top">
+        <img src="products/offer-1.jfif" alt="offer" />
+        <img src="products/offer-2.jfif" alt="offer" />
+        <img src="products/offer-3.jfif" alt="offer" />
+        <img src="products/offer-4.jfif" alt="offer" />
+        <div class="offer__content">
+          <h2 class="section__header">Smart Offers</h2>
+          <p class="section__subheader">
+            Unlock a Lifetime of Benefits: Become a Sante Partner Today! Whether
+            you seek exclusive discounts as a Sante Barley enthusiast or aspire
+            to thrive as a Sante Business Owner, our partnership offers endless
+            opportunities for growth and prosperity. Being a Sante partner
+            offers the advantage of building a successful business while
+            promoting health and wellness, supported by a reputable brand and a
+            strong community.
+          </p>
+          <button
+            class="btn"
+            onclick="window.location.href='https://www.mysante.com/store.htm?id=emzkee88'">
+            Inquire Now
+          </button>
+        </div>
+      </div>
+      <div class="offer__grid__bottom">
+        <div class="offer__content">
+          <h2 class="section__header">OUR BEST SELLERS</h2>
+          <p class="section__subheader">
+            Experience the Power of Sante Barley's Best Sellers: Elevate Your
+            Wellness Journey with our Premium Selections. Discover the Ultimate
+            in Health and Vitality, Trusted by Thousands Worldwide.
+          </p>
+        </div>
+        <a href="sbcanisterstevia.html ">
+          <img src="products/SPHN09369_Lbg.png" alt="offer" />SANTÉ Barley
+          Powder with Stevia Canister (200g)</a>
+        <a href="sbcanisterplain.html ">
+          <img src="products/SPHN09368_Lbg.png" alt="offer" />Santé Barley
+          Powder Plain Canister (200g)</a>
+        <a href="sbcapsuleSN0929.html"
+          ><img src="products/SN0929_Lbg.png" alt="offer" />SANTÉ Barley Capsule
+          (500mg)</a>
+        <a href="sbdailyCplusSPHN02331.html"
+          ><img src="products/SPHN02331_Lbg.png" alt="offer" />SANTÉ Barley
+          Daily-C Plus (500mg)</a>
+        <a href="sbdailyCSN0207.html"
+          ><img src="products/SN0207_Lbg.png" alt="offer" />SANTÉ Barley Daily-C
+          (750mg)</a>
+        <a href="sbnutripairSN1301.html"
+          ><img src="products/SN1301_Lbg.png" alt="offer" />Santé NutriPair
+          Set</a>
+        <a href="sbsachetSN0930.html"
+          ><img src="products/SN0930_Lbg.png" alt="offer" />Santé Barley Powder
+          (Certified Organic) 3g x 30s</a>
+        <a href="sbsachetSPHN09415.html"
+          ><img src="products/SPHN09415_Lbg.png" alt="offer" />Santé Barley
+          Powder (3g x 10s)</a>
+        <div class="offer__content"></div>
+          <button
+            class="btn"
+            onclick="window.location.href='https://app.santebarley.com/shop?sponsor=emzkee88&source=MySante&ctrycode=PH'">
+            View More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container craft__container" id="craft">
+      <div class="craft__content">
+        <h2 class="section__header">HEALTH BEVERAGE AND SNACKS SERIES</h2>
         <p class="section__subheader">
-          Experience the Power of Sante Barley's Best Sellers: Elevate Your Wellness Journey with our Premium
-          Selections. Discover the Ultimate in Health and Vitality, Trusted by Thousands Worldwide.
+          Elevate your snacking experience with the Santé Barley Health Beverage
+          and Snacks Series, a curated selection of wholesome and nutritious
+          treats designed to nourish your body while satisfying your taste buds.
+          Crafted with care and precision, each product in this series is
+          infused with the goodness of Santé Barley, a premium superfood known
+          for its abundant health benefits.
         </p>
       </div>
-      <a href="sbcanisterstevia.html "> <img src="products/SPHN09369_Lbg.png" alt="offer" />SANTÉ Barley Powder with
-        Stevia Canister (200g)</a>
-      <a href="sbcanisterplain.html "> <img src="products/SPHN09368_Lbg.png" alt="offer" />Santé Barley Powder Plain
-        Canister (200g)</a>
-      <a href="sbcapsuleSN0929.html"><img src="products/SN0929_Lbg.png" alt="offer" />SANTÉ Barley Capsule (500mg)</a>
-      <a href="sbdailyCplusSPHN02331.html"><img src="products/SPHN02331_Lbg.png" alt="offer" />SANTÉ Barley Daily-C Plus
-        (500mg)</a>
-      <a href="sbdailyCSN0207.html"><img src="products/SN0207_Lbg.png" alt="offer" />SANTÉ Barley Daily-C (750mg)</a>
-      <a href="sbnutripairSN1301.html"><img src="products/SN1301_Lbg.png" alt="offer" />Santé NutriPair Set</a>
-      <a href="sbsachetSN0930.html"><img src="products/SN0930_Lbg.png" alt="offer" />Santé Barley Powder (Certified
-        Organic) 3g x 30s</a>
-      <a href="sbsachetSPHN09415.html"><img src="products/SPHN09415_Lbg.png" alt="offer" />Santé Barley Powder (3g x 10s)</a>
-    </div>
-    <div class="offer__content">
-    <button class="btn"
-       onclick="window.location.href='https://app.santebarley.com/shop?sponsor=emzkee88&source=MySante&ctrycode=PH'">View
-       More</button>
+      <div class="craft__image">
+        <div class="craft__image__content">
+          <img src="products/SB0113_Lbg.png" alt="craft" />
+          <p>Santé Fit N' Trim (7gms x 10 sachets)</p>
+          <h4>₱ 720.00</h4>
+        </div>
+        <a href="sbfitntrimSB0113.html"><i class="ri-add-line"></i></a>
       </div>
-  </section>
+      <div class="craft__image">
+        <div class="craft__image__content">
+          <img src="products/SB0204_Lbg.png" alt="craft" />
+          <p>Santé Boost Coffee (15gms x 10 Sachets)</p>
+          <h4>₱ 380.00</h4>
+        </div>
+        <a href="sbboostcoffeeSB0204.html"><i class="ri-add-line"></i></a>
+      </div>
+      <div class="craft__image">
+        <div class="craft__image__content">
+          <img src="products/SB0301_Lbg.png" alt="craft" />
+          <p>Santé Choco Barley (15gms x 10 sachets)</p>
+          <h4>₱ 370.00</h4>
+        </div>
+        <a href="sbchocoSB0301.html"><i class="ri-add-line"></i></a>
+      </div>
+      <div class="craft__image">
+        <div class="craft__image__content">
+          <img src="products/SN0910_Lbg.png" alt="craft" />
+          <p>Santé Fusion Coffee (15gms x 10 sachets)</p>
+          <h4>₱ 340.00</h4>
+        </div>
+        <a href="sbfusionSN0910.html"><i class="ri-add-line"></i></a>
+      </div>
+      <button
+        class="btn"
+        onclick="window.location.href='https://app.santebarley.com/shop?sponsor=emzkee88&source=MySante&ctrycode=PH'"
+      >
+        View More
+      </button>
+    </section>
 
-  <section class="section__container craft__container" id="craft">
-    <div class="craft__content">
-      <h2 class="section__header">HEALTH BEVERAGE AND SNACKS SERIES</h2>
-      <p class="section__subheader">
-        Elevate your snacking experience with the Santé Barley Health Beverage and Snacks Series, a curated selection of
-        wholesome and nutritious treats designed to nourish your body while satisfying your taste buds. Crafted with
-        care and precision, each product in this series is infused with the goodness of Santé Barley, a premium
-        superfood known for its abundant health benefits.
-      </p>
-    </div>
-    <div class="craft__image">
-      <div class="craft__image__content">
-        <img src="products/SB0113_Lbg.png" alt="craft" />
-        <p>Santé Fit N' Trim (7gms x 10 sachets)</p>
-        <h4>₱ 720.00</h4>
+    <section class="section__container modern__container" id="modern">
+      <div class="modern__image">
+        <img src="icons/dot-bg.png" alt="bg" class="modern__bg" />
+        <img src="images/K2.png" alt="modern" class="modern__img-1" />
+        <img src="images/K3.png" alt="modern" class="modern__img-2" />
+        <img src="images/K6.png" alt="modern" class="modern__img-3" />
       </div>
-      <a href="sbfitntrimSB0113.html"><i class="ri-add-line"></i></a>
-    </div>
-    <div class="craft__image">
-      <div class="craft__image__content">
-        <img src="products/SB0204_Lbg.png" alt="craft" />
-        <p>Santé Boost Coffee (15gms x 10 Sachets)</p>
-        <h4>₱ 380.00</h4>
+      <div class="modern__content">
+        <br />
+        <h2 class="section__header">Partner with Us!</h2>
+        <p class="section__subheader">
+          Are you passionate about health and wellness? Do you want to be part
+          of a thriving community dedicated to improving lives through natural
+          and effective health solutions? Look no further! At Sante Barley, we
+          offer a unique opportunity to partner with a leading brand in the
+          health and wellness industry.
+        </p>
+        <br />
+        <p><strong>What We Offer:</strong></p>
+        <div class="modern__grid">
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              <strong>Comprehensive Training:</strong> Access to top-notch
+              training programs designed to equip you with the knowledge and
+              skills needed to succeed in the health and wellness industry.
+              Learn from industry experts and successful partners through
+              webinars, workshops, and one-on-one coaching.
+            </p>
+          </div>
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              <strong>Marketing Support:</strong> Utilize our professional
+              marketing materials and strategies to promote Sante Barley
+              products effectively. Get support from our dedicated marketing
+              team to help you create and execute successful campaigns.
+            </p>
+          </div>
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              <strong>Community and Support:</strong>
+              Be part of a supportive and inspiring community of like-minded
+              individuals. Share experiences, gain insights, and collaborate
+              with other Sante Barley partners.
+            </p>
+          </div>
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              <strong>Generous Compensation Plan:</strong>
+              Enjoy a lucrative compensation plan with multiple income streams
+              including retail profits, performance bonuses, and residual
+              income. Achieve your financial goals while promoting health and
+              wellness.
+            </p>
+          </div>
+        </div>
+        <button class="btn" id="learnMoreBtn">Learn More</button>
       </div>
-      <a href="sbboostcoffeeSB0204.html"><i class="ri-add-line"></i></a>
-    </div>
-    <div class="craft__image">
-      <div class="craft__image__content">
-        <img src="products/SB0301_Lbg.png" alt="craft" />
-        <p>Santé Choco Barley (15gms x 10 sachets)</p>
-        <h4>₱ 370.00</h4>
-      </div>
-      <a href="sbchocoSB0301.html"><i class="ri-add-line"></i></a>
-    </div>
-    <div class="craft__image">
-      <div class="craft__image__content">
-        <img src="products/SN0910_Lbg.png" alt="craft" />
-        <p>Santé Fusion Coffee (15gms x 10 sachets)</p>
-        <h4>₱ 340.00</h4>
-      </div>
-      <a href="sbfusionSN0910.html"><i class="ri-add-line"></i></a>
-    </div>
-      <button class="btn"
-        onclick="window.location.href='https://app.santebarley.com/shop?sponsor=emzkee88&source=MySante&ctrycode=PH'">View
-        More</button>
-  </section>
+    </section>
 
-  <section class="section__container modern__container" id="modern">
-    <div class="modern__image">
-      <img src="icons/dot-bg.png" alt="bg" class="modern__bg" />
-      <img src="images/K2.png" alt="modern" class="modern__img-1" />
-      <img src="images/K3.png" alt="modern" class="modern__img-2" />
-      <img src="images/K6.png" alt="modern" class="modern__img-3" />
-    </div>
-    <div class="modern__content"><br />
-      <h2 class="section__header">
-        Partner with Us!
-      </h2>
-      <p class="section__subheader">
-        Are you passionate about health and wellness? Do you want to be part of a thriving community dedicated to
-        improving lives through natural and effective health solutions? Look no further! At Sante Barley, we offer a
-        unique opportunity to partner with a leading brand in the health and wellness industry.
-      </p><br />
-      <p><strong>What We Offer:</strong></p>
-      <div class="modern__grid">
-        <div class="modern__card">
-          <span><i class="ri-checkbox-blank-circle-line"></i></span>
-          <p>
-            <strong>Comprehensive Training:</strong> Access to top-notch training programs designed to equip you with
-            the knowledge and skills needed to succeed in the health and wellness industry.
-            Learn from industry experts and successful partners through webinars, workshops, and one-on-one coaching.
-          </p>
-        </div>
-        <div class="modern__card">
-          <span><i class="ri-checkbox-blank-circle-line"></i></span>
-          <p>
-            <strong>Marketing Support:</strong> Utilize our professional marketing materials and strategies to promote
-            Sante Barley products effectively.
-            Get support from our dedicated marketing team to help you create and execute successful campaigns.
-          </p>
-        </div>
-        <div class="modern__card">
-          <span><i class="ri-checkbox-blank-circle-line"></i></span>
-          <p>
-            <strong>Community and Support:</strong>
-            Be part of a supportive and inspiring community of like-minded individuals.
-            Share experiences, gain insights, and collaborate with other Sante Barley partners.
-          </p>
-        </div>
-        <div class="modern__card">
-          <span><i class="ri-checkbox-blank-circle-line"></i></span>
-          <p>
-            <strong>Generous Compensation Plan:</strong>
-            Enjoy a lucrative compensation plan with multiple income streams including retail profits, performance
-            bonuses, and residual income.
-            Achieve your financial goals while promoting health and wellness.
-          </p>
-        </div>
-      </div>
-      <button class="btn" id="learnMoreBtn">Learn More</button>
-    </div>
-  </section>
-
-  <!--Modal Section-->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Partner with Us!</h2>
-      <p>Are you passionate about health and wellness? Do you want to be part of a thriving community dedicated to
-        improving lives through natural and effective health solutions? Look no further! At Sante Barley, we offer a
-        unique opportunity to partner with a leading brand in the health and wellness industry.</p>
-      <h3>Why Partner with Sante Barley?</h3>
-      <ul>
-        <li><strong>High-Quality Products:</strong> Our Sante Barley products are made from 100% organic young barley
-          grass, rich in vitamins, minerals, amino acids, and antioxidants. We adhere to the highest standards of
-          quality and safety to ensure our products deliver the best health benefits.</li>
-        <li><strong>Proven Business Model:</strong> Join a successful network marketing business model that has helped
-          thousands of individuals achieve financial independence. Benefit from comprehensive training programs and
-          continuous support to help you succeed.</li>
-        <li><strong>Generous Compensation Plan:</strong> Enjoy a lucrative compensation plan with multiple income
-          streams including retail profits, performance bonuses, and residual income. Achieve your financial goals while
-          promoting health and wellness.</li>
-        <li><strong>Global Reach:</strong> Leverage our extensive global network and reach customers around the world.
-          Participate in international events and training programs to expand your business horizons.</li>
-      </ul>
-      <h3>What We Offer:</h3>
-      <ul>
-        <li><strong>Comprehensive Training:</strong> Access to top-notch training programs designed to equip you with
-          the knowledge and skills needed to succeed in the health and wellness industry. Learn from industry experts
-          and successful partners through webinars, workshops, and one-on-one coaching.</li>
-        <li><strong>Marketing Support:</strong> Utilize our professional marketing materials and strategies to promote
-          Sante Barley products effectively. Get support from our dedicated marketing team to help you create and
-          execute successful campaigns.</li>
-        <li><strong>Community and Support:</strong> Be part of a supportive and inspiring community of like-minded
-          individuals. Share experiences, gain insights, and collaborate with other Sante Barley partners.</li>
-      </ul>
-      <h3>How to Get Started:</h3>
-      <ol>
-        <li><strong>Sign Up:</strong> Visit our <a
-            href="https://www.mysante.com/store.htm?id=emzkee88"><strong>Website</strong></a> and register to become a
-          Sante Barley partner.</li>
-        <li><strong>Get Trained:</strong> Attend our training sessions and learn everything you need to know about our
-          products and business model.</li>
-        <li><strong>Start Earning:</strong> Begin promoting Sante Barley products and enjoy the financial rewards of
-          your efforts.</li>
-      </ol>
-      <h3>Join Us Today!</h3>
-      <p>Take the first step towards a healthier, wealthier future with Sante Barley. Partner with us and make a
-        difference in your life and the lives of others. Together, we can achieve great things!</p>
-      <p>For more information, visit our <a
-          href="https://www.mysante.com/store.htm?id=emzkee88"><strong>Website</strong></a> or <a href="#"
-          onclick="openMessenger(); return false;"><strong>Message Us</strong></a> us directly. We look forward to
-        welcoming you to the
-        Sante
-        Barley family!</p>
-    </div>
-  </div>
-  <section class="section__container testimonial__container" id="testimonial">
-    <h2 class="section__header">Testimonials</h2>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="testimonial__card">
-            <p>
-              “There is a saying that health is wealth. It may sound cliché because people use it all the
-              time but, I know that through experience because I almost died twice—when I had a stroke in
-              2010 and when I got sick again in 2013. After those two health scares, it was embedded in my
-              mind, and my heart, that I should be healthy not just for myself but also for my family and
-              my God.”
-            </p>
-            <img src="https://main.santebarley.com/ph/wp-content/uploads/sites/2/2021/04/Kuya-Kim-1.png"
-              alt="testimonial" />
-            <h4>Kuya Kim</h4>
-            <h5>Santé Brand Ambassador</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial__card">
-            <p>
-              “Last year, the pandemic helped us realize how important it is to keep our bodies fit and our immune
-              system strong. Santé Daily-C helped me become mentally healthy since i know to myself that I am doing my
-              part and my best to fight off the dangers of these trying times.”
-            </p>
-            <img src="https://main.santebarley.com/ph/wp-content/uploads/sites/2/2021/04/Catriona-Gray-1.png"
-              alt="testimonial" />
-            <h4>Catriona Gray</h4>
-            <h5>Santé Daily C Endorser</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial__card">
-            <p>
-              "I was diagnosed with Breast Cancer on April 4, 2001 with only 5-year chance of survival.
-              I discovered Barley in the Internet and took it along with chemotherapy. Now I am on my 9th year of
-              survival.
-              Barley didn't just save my life but gave me a new life that I decided to take it everyday for the rest of
-              my life."
-            </p>
-            <img src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_mfernandez.jpg" alt="testimonial" />
-            <h4>Maritoni Fernandez</h4>
-            <h5>Actress/Cancer Survivor</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial__card">
-            <p>
-              In 2010 April Boy Regino encountered one of the biggest challenge in his life and family that tested their
-              courage and faith. He was diagnosed with Prostate Cancer.
-              <br />
-              "When I found out that I have Prostate Cancer akala ko mamamatay na ako." God answered their prayers, his
-              brother-in-law invited him to try Santé Pure Barley. April Boy didn't expect that Barley will change his
-              life. After three months of using Santé Pure Barley, he is very proud to share his testimony to
-              the public.
-            </p>
-            <img src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_aregino.jpg" alt="testimonial" />
-            <h4>April Boy Regino</h4>
-            <h5>Singer/Song Writer/Cancer Survivor</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial__card">
-            <p>
-              Born May 4, 2010<br />
-              May 4-June 4 - admitted to neonatal intensive care unit<br />
-              June 8 - patient was discharged against medical advice<br />
-              July 24 - admitted for difficulty of breathing<br />
-              July 24- Aug 8 - diagnosed with pneumonia<br />
-              Aug 12 - Mother started to give baby Sante Pure Barley<br />
-              First week - 2 sachets per day<br />
-
-              Improvements from the time that baby was given Sante Pure Barley:<br />
-              • Healed of blood infection
-              • Normal blood count
-              • No longer anemic
-              • Became more active
-              • No more difficulty of breathing
-              • Gained good appetite
-              • Can sleep well
-            </p>
-            <img src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_pjamila.jpg" alt="testimonial" />
-            <h4>Princess Jamila Canda</h4>
-            <h5>Barley Baby/Neonatal Pneumonia with Clinical Sepsis</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial__card">
-            <p>
-              Diagnosed with kidney stone and scheduled for operation at the Davao Regional Hospital.
-              Daily, he took Pure Barley NZ 1 sachet and 3 capsules of Santé Barley Pure 30 minutes before a healthy
-              meal. After one week, he passed out stones through his urinary tract.
-              Operation was no longer needed.
-            </p>
-            <img src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_dacua.jpg" alt="testimonial" />
-            <h4>Mr. Dacua</h4>
-            <h5>Kidney Stones</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial__card">
-            <p>
-              "Nagkaroon ako ng stroke at hypertension. Sumakit and buong katawan ko, naghihina at nahihilo. Sumasakit
-              ang ulo ko.
-              Uminom ako ng Barley Pure 1x a day. Gumaan ang pakiramdam ko, nawala ang pananakit ng batok ko, bumaba ang
-              BP. Hindi na ako stressed out."
-            </p>
-            <img src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_malakar.jpg" alt="testimonial" />
-            <h4>Mercedita Alaka</h4>
-            <h5>Businesswoman/Stroke and Hypertension</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial__card">
-            <p>
-              Diagnosed with chronic gastritis with intestinal metaplasia; gastric outlet obstruction secondary to
-              chronic peptic ulcer.
-              Can't eat solid foods since 2006, only oatmeal and Ensure. Has multiple skin lesions on both hands.
-              Took 2 sachets of barley in the morning and before bedtime.
-            </p>
-            <img src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_tlagasca.jpg" alt="testimonial" />
-            <h4>Teresita B. Lagasca</h4>
-            <h5>46 yrs old, Cook/Chronic Gastritis with Intestinal Metaplasia</h5>
-          </div>
-        </div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-
-  <section class="section__container blog_container" id="blog">
-    <h2 class="section__header">Blog</h2>
-    <div class="blog__grid">
-      <div class="blog__card">
-        <img
-          src="https://main.santebarley.com/ph/wp-content/uploads/sites/2/2022/12/292045202_5213763662079280_2949299715422184543_n-1-600x316.jpeg"
-          alt="blog" />
-        <h4>5 Reasons To Buy The New 200g Santé Barley Powder In Canister</h4>
+    <!--Modal Section-->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Partner with Us!</h2>
         <p>
-          <span>by</span> admin_ryan <span>on</span>July 29, 2022
+          Are you passionate about health and wellness? Do you want to be part
+          of a thriving community dedicated to improving lives through natural
+          and effective health solutions? Look no further! At Sante Barley, we
+          offer a unique opportunity to partner with a leading brand in the
+          health and wellness industry.
         </p>
-        <button class="btn"
-          onclick="window.location.href='https://main.santebarley.com/ph/reasons-to-buy-the-new-200g-sante-barley-powder-in-canister/'">View
-          Now</button>
-      </div>
-      <div class="blog__card">
-        <img
-          src="https://main.santebarley.com/ph/wp-content/uploads/sites/2/2022/02/7-Key-Nutrients-in-Barley-Grass-and-Their-Benefits.jpg"
-          alt="blog" />
-        <h4>7 Key Nutrients in Barley Grass and Their Benefits</h4>
+        <h3>Why Partner with Sante Barley?</h3>
+        <ul>
+          <li>
+            <strong>High-Quality Products:</strong> Our Sante Barley products
+            are made from 100% organic young barley grass, rich in vitamins,
+            minerals, amino acids, and antioxidants. We adhere to the highest
+            standards of quality and safety to ensure our products deliver the
+            best health benefits.
+          </li>
+          <li>
+            <strong>Proven Business Model:</strong> Join a successful network
+            marketing business model that has helped thousands of individuals
+            achieve financial independence. Benefit from comprehensive training
+            programs and continuous support to help you succeed.
+          </li>
+          <li>
+            <strong>Generous Compensation Plan:</strong> Enjoy a lucrative
+            compensation plan with multiple income streams including retail
+            profits, performance bonuses, and residual income. Achieve your
+            financial goals while promoting health and wellness.
+          </li>
+          <li>
+            <strong>Global Reach:</strong> Leverage our extensive global network
+            and reach customers around the world. Participate in international
+            events and training programs to expand your business horizons.
+          </li>
+        </ul>
+        <h3>What We Offer:</h3>
+        <ul>
+          <li>
+            <strong>Comprehensive Training:</strong> Access to top-notch
+            training programs designed to equip you with the knowledge and
+            skills needed to succeed in the health and wellness industry. Learn
+            from industry experts and successful partners through webinars,
+            workshops, and one-on-one coaching.
+          </li>
+          <li>
+            <strong>Marketing Support:</strong> Utilize our professional
+            marketing materials and strategies to promote Sante Barley products
+            effectively. Get support from our dedicated marketing team to help
+            you create and execute successful campaigns.
+          </li>
+          <li>
+            <strong>Community and Support:</strong> Be part of a supportive and
+            inspiring community of like-minded individuals. Share experiences,
+            gain insights, and collaborate with other Sante Barley partners.
+          </li>
+        </ul>
+        <h3>How to Get Started:</h3>
+        <ol>
+          <li>
+            <strong>Sign Up:</strong> Visit our
+            <a href="https://www.mysante.com/store.htm?id=emzkee88"
+              ><strong>Website</strong></a
+            >
+            and register to become a Sante Barley partner.
+          </li>
+          <li>
+            <strong>Get Trained:</strong> Attend our training sessions and learn
+            everything you need to know about our products and business model.
+          </li>
+          <li>
+            <strong>Start Earning:</strong> Begin promoting Sante Barley
+            products and enjoy the financial rewards of your efforts.
+          </li>
+        </ol>
+        <h3>Join Us Today!</h3>
         <p>
-          <span>by</span> blogmanager <span>on</span> November 23, 2021
+          Take the first step towards a healthier, wealthier future with Sante
+          Barley. Partner with us and make a difference in your life and the
+          lives of others. Together, we can achieve great things!
         </p>
-        <button class="btn"
-          onclick="window.location.href='https://main.santebarley.com/ph/key-nutrients-barley-grass-benefits/'">View
-          Now</button>
-      </div>
-      <div class="blog__card">
-        <img
-          src="https://main.santebarley.com/ph/wp-content/uploads/sites/2/2021/03/5-Signs-of-A-Weak-Immune-System-980x340-1-600x316.jpg"
-          alt="blog" />
-        <h4>5 Signs of A Weak Immune System</h4>
-        <p><span>by</span> admin_ryan <span>on</span> March 26, 2021</p>
-        <button class="btn"
-          onclick="window.location.href='https://main.santebarley.com/ph/signs-weak-immune-system/'">View
-          Now</button>
+        <p>
+          For more information, visit our
+          <a href="https://www.mysante.com/store.htm?id=emzkee88"
+            ><strong>Website</strong></a
+          >
+          or
+          <a href="#" onclick="openMessenger(); return false;"
+            ><strong>Message Us</strong></a
+          >
+          us directly. We look forward to welcoming you to the Sante Barley
+          family!
+        </p>
       </div>
     </div>
-  </section>
+    <section class="section__container testimonial__container" id="testimonial">
+      <h2 class="section__header">Testimonials</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                “There is a saying that health is wealth. It may sound cliché
+                because people use it all the time but, I know that through
+                experience because I almost died twice—when I had a stroke in
+                2010 and when I got sick again in 2013. After those two health
+                scares, it was embedded in my mind, and my heart, that I should
+                be healthy not just for myself but also for my family and my
+                God.”
+              </p>
+              <img
+                src="https://main.santebarley.com/ph/wp-content/uploads/sites/2/2021/04/Kuya-Kim-1.png"
+                alt="testimonial"
+              />
+              <h4>Kuya Kim</h4>
+              <h5>Santé Brand Ambassador</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                “Last year, the pandemic helped us realize how important it is
+                to keep our bodies fit and our immune system strong. Santé
+                Daily-C helped me become mentally healthy since i know to myself
+                that I am doing my part and my best to fight off the dangers of
+                these trying times.”
+              </p>
+              <img
+                src="https://main.santebarley.com/ph/wp-content/uploads/sites/2/2021/04/Catriona-Gray-1.png"
+                alt="testimonial"
+              />
+              <h4>Catriona Gray</h4>
+              <h5>Santé Daily C Endorser</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                "I was diagnosed with Breast Cancer on April 4, 2001 with only
+                5-year chance of survival. I discovered Barley in the Internet
+                and took it along with chemotherapy. Now I am on my 9th year of
+                survival. Barley didn't just save my life but gave me a new life
+                that I decided to take it everyday for the rest of my life."
+              </p>
+              <img
+                src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_mfernandez.jpg"
+                alt="testimonial"
+              />
+              <h4>Maritoni Fernandez</h4>
+              <h5>Actress/Cancer Survivor</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                In 2010 April Boy Regino encountered one of the biggest
+                challenge in his life and family that tested their courage and
+                faith. He was diagnosed with Prostate Cancer.
+                <br />
+                "When I found out that I have Prostate Cancer akala ko mamamatay
+                na ako." God answered their prayers, his brother-in-law invited
+                him to try Santé Pure Barley. April Boy didn't expect that
+                Barley will change his life. After three months of using Santé
+                Pure Barley, he is very proud to share his testimony to the
+                public.
+              </p>
+              <img
+                src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_aregino.jpg"
+                alt="testimonial"
+              />
+              <h4>April Boy Regino</h4>
+              <h5>Singer/Song Writer/Cancer Survivor</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                Born May 4, 2010<br />
+                May 4-June 4 - admitted to neonatal intensive care unit<br />
+                June 8 - patient was discharged against medical advice<br />
+                July 24 - admitted for difficulty of breathing<br />
+                July 24- Aug 8 - diagnosed with pneumonia<br />
+                Aug 12 - Mother started to give baby Sante Pure Barley<br />
+                First week - 2 sachets per day<br />
 
-  <footer class="footer">
-    <div class="section__container footer__bar">
-      <div class="footer__logo">
-        <h4><a href="#">Santé Barley Wellness Hub -Silay</a></h4>
-        <p>&copy; 2024 csjsantebiz. All rights reserved.</p>
+                Improvements from the time that baby was given Sante Pure
+                Barley:<br />
+                • Healed of blood infection • Normal blood count • No longer
+                anemic • Became more active • No more difficulty of breathing •
+                Gained good appetite • Can sleep well
+              </p>
+              <img
+                src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_pjamila.jpg"
+                alt="testimonial"
+              />
+              <h4>Princess Jamila Canda</h4>
+              <h5>Barley Baby/Neonatal Pneumonia with Clinical Sepsis</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                Diagnosed with kidney stone and scheduled for operation at the
+                Davao Regional Hospital. Daily, he took Pure Barley NZ 1 sachet
+                and 3 capsules of Santé Barley Pure 30 minutes before a healthy
+                meal. After one week, he passed out stones through his urinary
+                tract. Operation was no longer needed.
+              </p>
+              <img
+                src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_dacua.jpg"
+                alt="testimonial"
+              />
+              <h4>Mr. Dacua</h4>
+              <h5>Kidney Stones</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                "Nagkaroon ako ng stroke at hypertension. Sumakit and buong
+                katawan ko, naghihina at nahihilo. Sumasakit ang ulo ko. Uminom
+                ako ng Barley Pure 1x a day. Gumaan ang pakiramdam ko, nawala
+                ang pananakit ng batok ko, bumaba ang BP. Hindi na ako stressed
+                out."
+              </p>
+              <img
+                src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_malakar.jpg"
+                alt="testimonial"
+              />
+              <h4>Mercedita Alaka</h4>
+              <h5>Businesswoman/Stroke and Hypertension</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                Diagnosed with chronic gastritis with intestinal metaplasia;
+                gastric outlet obstruction secondary to chronic peptic ulcer.
+                Can't eat solid foods since 2006, only oatmeal and Ensure. Has
+                multiple skin lesions on both hands. Took 2 sachets of barley in
+                the morning and before bedtime.
+              </p>
+              <img
+                src="http://www.barleysolution.com/wp-content/uploads/2014/05/img_tlagasca.jpg"
+                alt="testimonial"
+              />
+              <h4>Teresita B. Lagasca</h4>
+              <h5>
+                46 yrs old, Cook/Chronic Gastritis with Intestinal Metaplasia
+              </h5>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <ul class="footer__nav">
-        <li class="footer__link"><a href="#"><img src="icons/home.png" alt /></a></li>
-        <li class="footer__link"><a href="https://www.facebook.com/profile.php?id=61558630605773"><img
-              src="icons/facebook.png" alt /></a></li>
-        <li class="footer__link"><a href="https://www.mysante.com/store.htm?id=emzkee88"><img
-              src="icons/mysantestore-logo-footer.png" alt /></a></li>
-        <li class="footer__link"><a href="class.html"><img
-              src="icons/youtube.png" alt /></a></li>
-      </ul>
-    </div>
-  </footer>
+    </section>
 
-  <script>
-    function openMessenger() {
-      // Replace 'your_page_id' with your Facebook Page ID
-      var pageID = '309730608884497';
+    <section class="section__container blog_container" id="blog">
+      <h2 class="section__header">Blog</h2>
+      <div class="blog__grid">
+        <div class="blog__card">
+          <img
+            src="https://main.santebarley.com/ph/wp-content/uploads/sites/2/2022/12/292045202_5213763662079280_2949299715422184543_n-1-600x316.jpeg"
+            alt="blog"
+          />
+          <h4>5 Reasons To Buy The New 200g Santé Barley Powder In Canister</h4>
+          <p><span>by</span> admin_ryan <span>on</span>July 29, 2022</p>
+          <button
+            class="btn"
+            onclick="window.location.href='https://main.santebarley.com/ph/reasons-to-buy-the-new-200g-sante-barley-powder-in-canister/'"
+          >
+            View Now
+          </button>
+        </div>
+        <div class="blog__card">
+          <img
+            src="https://main.santebarley.com/ph/wp-content/uploads/sites/2/2022/02/7-Key-Nutrients-in-Barley-Grass-and-Their-Benefits.jpg"
+            alt="blog"
+          />
+          <h4>7 Key Nutrients in Barley Grass and Their Benefits</h4>
+          <p><span>by</span> blogmanager <span>on</span> November 23, 2021</p>
+          <button
+            class="btn"
+            onclick="window.location.href='https://main.santebarley.com/ph/key-nutrients-barley-grass-benefits/'"
+          >
+            View Now
+          </button>
+        </div>
+        <div class="blog__card">
+          <img
+            src="https://main.santebarley.com/ph/wp-content/uploads/sites/2/2021/03/5-Signs-of-A-Weak-Immune-System-980x340-1-600x316.jpg"
+            alt="blog"
+          />
+          <h4>5 Signs of A Weak Immune System</h4>
+          <p><span>by</span> admin_ryan <span>on</span> March 26, 2021</p>
+          <button
+            class="btn"
+            onclick="window.location.href='https://main.santebarley.com/ph/signs-weak-immune-system/'"
+          >
+            View Now
+          </button>
+        </div>
+      </div>
+    </section>
 
-      // Open Facebook Messenger URL
-      window.open('https://m.me/' + pageID, '_blank');
-    }
-  </script>
+    <footer class="footer">
+      <div class="section__container footer__bar">
+        <div class="footer__logo">
+          <h4><a href="#">Santé Barley Wellness Hub -Silay</a></h4>
+          <p>&copy; 2024 csjsantebiz. All rights reserved.</p>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__link">
+            <a href="#"><img src="icons/home.png" alt /></a>
+          </li>
+          <li class="footer__link">
+            <a href="https://www.facebook.com/profile.php?id=61558630605773"
+              ><img src="icons/facebook.png" alt
+            /></a>
+          </li>
+          <li class="footer__link">
+            <a href="https://www.mysante.com/store.htm?id=emzkee88"
+              ><img src="icons/mysantestore-logo-footer.png" alt
+            /></a>
+          </li>
+          <li class="footer__link">
+            <a href="class.html"><img src="icons/youtube.png" alt /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
+    <script>
+      function openMessenger() {
+        // Replace 'your_page_id' with your Facebook Page ID
+        var pageID = "309730608884497";
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const modal = document.getElementById('modal');
-      const btn = document.getElementById('learnMoreBtn');
-      const span = document.getElementsByClassName('close')[0];
-
-      btn.onclick = () => {
-        modal.style.display = 'block';
+        // Open Facebook Messenger URL
+        window.open("https://m.me/" + pageID, "_blank");
       }
+    </script>
 
-      span.onclick = () => {
-        modal.style.display = 'none';
-      }
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
-      window.onclick = (event) => {
-        if (event.target == modal) {
-          modal.style.display = 'none';
-        }
-      }
-    });
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("modal");
+        const btn = document.getElementById("learnMoreBtn");
+        const span = document.getElementsByClassName("close")[0];
 
-    document.getElementById('navToggle').addEventListener('click', function () {
-      const nav = document.querySelector('.header__nav');
-      if (nav.style.display === 'flex') {
-        nav.style.display = 'none';
-      } else {
-        nav.style.display = 'flex';
-      }
-    });
-  </script>
+        btn.onclick = () => {
+          modal.style.display = "block";
+        };
 
-</body>
+        span.onclick = () => {
+          modal.style.display = "none";
+        };
 
+        window.onclick = (event) => {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+      });
+
+      document
+        .getElementById("navToggle")
+        .addEventListener("click", function () {
+          const nav = document.querySelector(".header__nav");
+          if (nav.style.display === "flex") {
+            nav.style.display = "none";
+          } else {
+            nav.style.display = "flex";
+          }
+        });
+    </script>
+  </body>
 </html>
